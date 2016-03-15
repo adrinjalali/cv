@@ -1,0 +1,280 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Adrin} % Your first name
+\familyname{Jalali} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Lessingstr. 41}{66121, Saarbr\"ucken, Germany}
+\mobile{+49-151-68121562}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{ajalali@mpi-inf.mpg.de}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+\section{Objective}
+\cvitem{}{To dedicate my time, experience and expertise in machine learning, algorithms, and programming, to projects that matter to people's well-being.}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+\subsection{Research Positions}
+\cventry{2012-Present}{Max Planck Institute for Informatics}{Computational Biology and Applied Algorithmics Department}{Saarbr\"ucken, Germany}{}{
+\begin{itemize}
+\item Interpretable Sparse Methods for Cancer Associations (Python)
+\begin{itemize}
+\item Interpretable per Case Weighted Ensemble Method for Cancer Associations: unlike conventional ensemble methods, in this work we introduced a weighting mechanism for the voting process over individual learners which adapts to each given test sample in order to compensate for the batch effects and noise in the data~[2].
+  %The \href{https://github.com/adrinjalali/Network-Classifier/tree/devel}{Code}, an \href{http://link.springer.com/chapter/10.1007/978-3-662-44753-6_26}{extended abstract[2]}, and a \href{http://biorxiv.org/content/early/2014/09/15/008185}{pre-print} of the work are available.
+\end{itemize}
+\end{itemize}}
+
+\cventry{2011-2012}{British Columbia Cancer Research Center}{Terry Fox Laboratory}{Vancouver, Canada}{}{
+\begin{itemize}
+\item Automated Flow Cytometry Data Analysis (R)
+\begin{itemize}
+\item Cellular hierarchy optimization for flow cytometry~[3, 4]
+  %: Problem was modelled onto a graph and finding k-shortest paths
+%in that graph was equivalent to having the solution. \href{http://cran.r-project.org/web/packages/kBestShortestPaths/index.html}{kBestShortestPaths} in CRAN, \href{http://www.bioconductor.org/packages/release/bioc/html/RchyOptimyx.html}{RchyOptimyx} in Bioconductor, and two publications [\href{http://onlinelibrary.wiley.com/doi/10.1002/cyto.a.22209/full}{3}, \href{http://bioinformatics.oxfordjournals.org/content/30/9/1329.short}{4}] are available as a result of the study.
+\item Classification of samples into diffuse large B-cell lymphoma and follicular lymphoma using flow cytometry experiments
+  %: Features were extracted using clustering
+%as the input of a bootstrap, feature selection, and classifier pipeline.
+\item Search for chemotherapy resistant cell populations using pre- and post-therapy flow cytometry experiments
+  %: RchyOptimyx pipeline was used to find
+%cell populations with high enrichment factors, \emph{i.e.} enriched cell populations after therapy that were resistant to chemotherapy.
+\item Characterization of heterogeneity in chronic lymphocytic leukemia
+  %: Patient samples are clustered into different groups according to their cell populations and important cell populations in differentiating those clusters are identified.
+\end{itemize}
+\end{itemize}}
+
+\subsection{Professional Employment}
+\cventry{2009--2011}{Kishware Software Group}{R\&D Department}{Tehran, Iran}{}{
+%\newline{}\newline{}
+\begin{itemize}
+\item Fraud detection in banks, \emph{Project Manager} (C++, Java, Oracle, Microsoft BI)
+  \begin{itemize}
+  \item Behavioral clustering of bank employees in time to detect major behavioral changes as anomalies.
+  \item Behavioral clustering of customers according to their debit card transactions in time to detect changes as potential fraud.
+  \end{itemize}
+\item Operational intelligence, \emph{Project Manager} (C++, Oracle, MATLAB, Java)
+  \begin{itemize}
+  \item Predict the terminal type of the next transaction of the customers using their transaction history.
+  \item Soft cluster customers according to their fuzzified transaction times and detect abnormal changes in cluster membership values.
+  \item Build a graph model to predict geographical location of terminals using customers' transaction history.
+  \end{itemize}
+\end{itemize}}
+
+\cventry{2008}{Orado Group}{}{Tehran, Iran}{}{
+C\# and T-SQL programmer in an educational/social network targeting Iranian secondary and high school students.}
+
+\cventry{2006--2007}{Fidofa Software Group}{}{Tehran, Iran}{}{
+\begin{itemize}
+\item Automatic trading system in futures stock market, \emph{Programmer} (Matlab, C\#)
+\begin{itemize}
+\item Implementation of Markowitz modern portfolio theory.
+\item Implementation of GARCH indicator for stock market price.
+\item Optimize parameters of company's existing trading systems using a genetic algorithm.
+\end{itemize}
+\end{itemize}}
+
+\cventry{2006}{Sourena Software Group}{}{Tehran, Iran}{}{
+C\# programmer in a Persian text to speech project.}
+
+\cventry{2005}{Tarrah Sarv System}{}{Tehran, Iran}{}{
+Delphi and T-SQL programmer in a system handling all personnel and factory processes of a chicken farm.}
+
+%\clearpage
+\subsection{Other Experience}
+
+\cventry{2009}{University of Tehran}{Mining Department}{Tehran, Iran}{}{
+We used adaptive Neuro-Fuzzy Inference System in MATLAB to predict Compressional and Shear Wave Velocities in dam sites in south west of Iran using
+sparse samples taken from the site before construction of dams.}
+
+\cventry{2006}{University of Tehran}{Management Faculty}{Tehran, Iran}{}{
+We developed a system to allow websites to have multiple structures to target different user groups according to their click-stream
+and product ratings. The system constructs structures offline, and later on these structures can be uploaded to be shown
+to users according to their behavior. The project targets websites that cannot afford the computational intensive processes
+of having a fully dynamic website. We designed a
+system including a singular value decomposition (SVD) method to fill in the rating missing values, as well as a genetic algorithm
+to find multiple website structures.}
+
+\cventry{2005}{Tehran Polytechnic}{Computer Engineering Department}{Tehran, Iran}{}{
+Message passing and routing in ad-hoc mobile sensor networks. We designed a semi-random routing system focusing on the power usage of
+the routing protocol including the computations required and the messages passed. We used OMNet++ for our simulations.}
+
+\cventry{2002--2005}{Tehran Polytechnic}{Rescue Simulation League, Robotics Lab}{Tehran, Iran}{}{
+  \begin{itemize}
+  \item[] \emph{7th place, world cup 2002 Italy}
+  \item[] \emph{5th place, world cup 2005 Japan}
+  \item[] Fire brigades and police forces (C++)
+    \begin{itemize}
+    \item Clustering of the buildings of the simulated world using self organizing map.
+    \item Program a strategy accordingly to find the best order of the buildings to be extinguished by fire brigades.
+    \end{itemize}
+  \end{itemize}
+}
+
+\subsection{Teaching Positions}
+\cventry {2011}{Lecturer}{Introduction to Programming}{Department of Fundamental Sciences}{University of Tehran, Tehran, Iran}{}
+\cventry {2006}{Teaching Assistant}{Introduction to Graphics Programming in C}{Department of Mechanical, Civil, and Texture Engineering}{Tehran Polytechnic, Tehran, Iran}{}
+\cventry {2006}{Teaching Assistant}{Data Structures and Algorithms}{Department of Math and Computer Science}{Tehran Polytechnic, Tehran, Iran}{}
+\cventry {2005}{Teaching Assistant}{Compilers}{Department of Math and Computer Science}{Tehran Polytechnic, Tehran, Iran}{}
+\cventry {2004}{Teaching Assistant}{Micro Processors}{Department of Math and Computer Science}{Tehran Polytechnic, Tehran, Iran}{}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+\section{Education}
+
+\cventry{2012--Present}{PhD (cont.) in Computer Science/Bioinformatics}{Max Planck Institute for Informatics, Computational Biology and Applied Algorithmics Department}{Saarbr\"ucken, Germany}{\newline{}\emph{Supervisors:} Dr. Nico Pfeifer, Prof. Dr. Dr. Thomas Lengauer,\newline{}\emph{Dissertation Topic:} Machine Learning in Cancer Diagnosis,\newline{}\emph{Degree anticipated:} May 2016}{}
+\cventry{2011--2012}{PhD in Bioinformatics}{University of British Columbia, British Columbia Cancer Research Center, Terry Fox Laboratory}{Vancouver, Canada}{\newline{}\emph{Supervisor:} Dr. Ryan Brinkman,\newline{}\emph{Topic:} Automated analysis of flow-cytometry data}{}
+\cventry{2006--2009}{MSc in Computer Science}{University of Tehran, School of Mathematics, Statistics, and Computer Science}{Tehran, Iran}{\newline{}\emph{Supervisor:} Dr. Abbas Nowzari-Dalini,\newline{}\emph{Thesis Topic:} Finding DNA Motifs Using Bidirectional Recurrent Neural Networks,\newline{}\emph{GPA:} 18.42/20}{}
+\cventry{2002--2006}{BSc in Computer Science}{Tehran Polytechnic, Department of Mathematics, and Computer Science}{Tehran, Iran}{\newline{}\emph{Thesis Topic:} Design and Implementation of a Genetic Algorithm to Solve Time Table of a School,\newline{}\emph{GPA:} 15.98/20}{}
+
+\section{Service}
+\cventry{2015}{Chemistry, Physics, and Technology Section Representative}{\href{http://www.phdnet.mpg.de/cms/}{PhDnet} steering group}{Max Planck Society}{Germany}{}
+\cventry{2012}{Bioinformatics Representative}{College for Interdisciplinary Studies Graduate Student Society}{University of British Columbia}{Vancouver, Canada}{}
+\cventry{2012}{``Bioinformatics'' and \href{http://www.graspods.com/}{``British Columbia Cancer Agency Graduate Student and Post Doctoral Fellow Society''} representative}{\href{http://gss.ubc.ca/main/}{Graduate Student Society}}{University of British Columbia}{Vancouver, Canada}{}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills}
+
+\cvitem{}{\textbf{C++, C, Python, Linux}}
+\cvitem{}{Java, R, Matlab, T-SQL, PL/SQL}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Persian}{Native}{}
+\cvitemwithcomment{English}{Fluent}{}
+\cvitemwithcomment{German}{Intermediate (A2/B1)}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+%\cvlistdoubleitem{Biking}{Karate}
+%\cvlistdoubleitem{Reading}{Movies}
+
+\section{Publications}
+
+\begin{enumerate}
+\item Courtot M., Meskas J., Diehl A. D., Droumeva R., Gottardo R., Jalali A., Taghiyar M.J., \emph{flowCL: ontology-based cell population labelling in flow cytometry}, Bioinformatics 31, no. 8 (2015): 1337-1339.
+
+\item Jalali A., and Pfeifer N., \emph{Interpretable per Case Weighted Ensemble Method for Cancer Associations}, Algorithms in Bioinformatics, pp. 352-353. Springer Berlin Heidelberg, 2014.
+
+\item O'Neill K.*, Jalali A.*, Aghaeepour N.*, Hoos H.H., and Brinkman R.R., \emph{Enhanced flowType/RchyOptimyx: A Bioconductor pipeline for discovery in high-dimensional cytometry data}, Bioinformatics (2014), doi: 10.1093/bioinformatics/btt770.
+
+\item Jalali A.*, Aghaeepour N.*, O'Neill K., Chattopadhyay P.K., Roederer M., Hoos H.H., Brinkman R.R., \emph{RchyOptimyx: cellular hierarchy optimization for flow cytometry}, Cytometry Part A 81, no. 12 (2012): 1022-1030.
+
+\item Aghaeepour N., Chattopadhyay P.K., Ganesan A., O'Neill K., Zare H., Jalali A., Hoos H.H., Roederer M., and Brinkman R.R., \emph{Early Immunologic Correlates of HIV Protection can be Identiﬁed from Computational Analysis of Complex Multivariate T-cell Flow Cytometry Assays},
+Bioinformatics, 2012: 28(7):1009–1016.
+
+\item Rezaei F.*, Jalali A.*, Memarian H., \emph{Estimation of Compressional and Shear Wave Velocities using Adaptive Neuro-Fuzzy Inference System, in some of dam sites in south west of Iran}, Journal of the Earth, Tehran, Iran, 2009.
+
+\item Behsaz B., Jalali A., Janzadeh H., Jouyandeh M.R.., Molazem F., Rahimi A., Salehi A., and Tavakoli Ghinani M., \emph{Team Description of S.O.S. 2005}, Proceedings CD RoboCup 2005, Osaka, Japan, 2005.
+  
+\item Tashakori M., Jalali A., Jooyandeh M.R., Gholami A., Behzadian A., Ghasemloo K., Esfahbod B., \emph{Rayan Team Strategy Description}, Proceedings CD RoboCup 2004, Lisboa, Portugal, 2004.
+  
+\item Shiri M.E., Jalali A., Jooyandeh M.R., Roshandel Tavana R., Behzadi M., \emph{AUTRescue Team Strategy Description}, Proceedings CD RoboCup 2003, Springer-Verlag, Padova, Italy, 2003. 
+\end{enumerate}
+
+\vspace{.5cm}
+\small{* co-authors contributed equally}
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\recipient{$ $}{$ $}
+%\date{\today} % Letter date
+%\opening{Dear Madam/Sir,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%Hereby I'd like to apply for your ``Software Developer C++/Java'' position. Currently I'm writing my PhD thesis in Saarbr\"ucken and expect to hand it in by the end of this year. Therefore I will be available from January 2016.
+
+%My experience with Oracle dates back to Oracle 8. Since then, until I started my PhD in 2011, I've been involved with several projects as back-end developer and/or database designer.
+
+%One of my favorite projects was an SMS gateway, when the SLA of a contract was 15000 SMS/second and the system could handle only 5000 SMS/second at the time. We found its bottleneck, tweaked the system's architecture, and after a week it delivered the desired SLA.
+
+%Another longer term project was in 2010-2011 when we where handling bank transactions for the operational intelligence project in \emph{Kishware Software Group}. The load was 15 million a day on its peak, and our statistical analysis had 10ms for each transaction to return its estimated risk. We developed our core in C++ and used Oracle for our offline storage and analysis, and server's main memory for the real-time analysis. MATLAB and Weka (in Java) were our machine learning analysis tools. I started as a researcher in that team and ended up as its project manager.
+
+%During my PhD I've used R and Python to analyze our data. I also gained statistical machine learning knowledge as a part of my training and during the projects I've been doing. I'm also a part-time system administrator in a department at the Saarland University, and I handle their servers which include: virtual machines, a compute cluster, and GPU servers, as well as their infrastructure servers such as Kerberos/LDAP, mail server, git server (gitlab), etc.
+
+%Consequently, the job description lists many skills that I feel confident in them, alongside some other skills that I would enjoy learning them. I'm really excited about the position, and I hope I can be a good member of you team.
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
